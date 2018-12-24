@@ -5,7 +5,7 @@ import (
 	"fmt"
 )
 
-func NewContainer() *Container {
+func New() *Container {
 	return &Container{}
 }
 

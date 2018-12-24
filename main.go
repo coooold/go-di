@@ -18,7 +18,7 @@ type B struct {
 }
 
 func main() {
-	container := di.NewContainer().Register("env", "test").Register(
+	container := di.New().Register("env", "test").Register(
 		(*GSR.Logger)(nil),
 		di.Create(func(c *di.Container) interface{} {
 			return log.New(os.Stdout, "", log.LstdFlags|log.Lshortfile)
